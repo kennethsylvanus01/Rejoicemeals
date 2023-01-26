@@ -73,8 +73,53 @@ header .icons i:hover{
     transition: 1.5s ease-in;
 }
 
-header .icons #menu{
+header .icons #menu-icon{
     display: none;
 }
-
 /*navbar ends here*/
+
+@media(max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+
+    header .logo img{
+        height: 10rem;
+    }
+}
+
+@media(max-width: 768px){
+    /*navbar media query*/
+    header .icons #menu-icon{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #2b2640;
+        transition: .3s;
+    }
+
+    header .navbar.active{
+        top: 70px;
+    }
+
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--black);
+    }
+} 
