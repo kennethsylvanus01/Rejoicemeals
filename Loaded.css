@@ -196,3 +196,11 @@ header .icons #menu-icon{
         background: var(--black);
     }
 } 
+
+@media(max-width: 480px){
+    /*slider style*/
+    #arrow-right{
+        margin-top:-38px;
+        color: #fff;
+    }
+}
