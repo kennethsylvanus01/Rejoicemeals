@@ -333,7 +333,41 @@ section{
     margin-top: .5rem;
 }
 
-.our-menu .menu-container .item .menu-item h3{}
+.item-name img{
+    width: 50px;
+    height: auto;
+}
+
+.item-name h2{
+    font-size: 3rem;
+    color: #e5e5e5;
+    font-weight: 300;
+}
+
+ .item-menu h3{
+    font-size: 2rem;
+    color: #e5e5e5;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.item-menu span{
+    width: 37%;
+    display: inline-block;
+    border: 1px dotted #e5e5e5;
+} 
+
+.item-menu ul{
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: .8rem 0;
+    font-weight: 200;
+}
+
+.item-menu ul li a{
+    color: #b9b9b9;
+}
 /*end of our-menu style End*/
 
 
@@ -348,6 +382,14 @@ section{
 
     header .logo img{
         height: 10rem;
+    }
+
+    .our-menu .menu-container{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+    }
+
+    .item-menu span{
+        width: 15%;
     }
 }
 
