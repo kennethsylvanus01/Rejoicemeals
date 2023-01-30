@@ -292,7 +292,49 @@ section{
     padding: .5rem 0;
     line-height: 1.5;
 }
+
+.welcome .box-container .box .content a{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    border: .1rem solid rgba(205,170,124,0.2);
+    background: transparent;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.welcome .box-container .box .content a:hover{
+    left: 0;
+    background-color: red;
+    transition: 1s;
+    color: var(--light);
+}
 /*welcome style End*/
+
+/*our-menu style End*/
+.our-menu{
+    background: url(img/logoA.jpg) left top no-repeat, url(img/logoC.jpg);
+}
+
+.our-menu .menu-container{
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem,2fr));
+    gap: 5rem 10rem;
+}
+
+.our-menu .menu-container .item .item-name{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.our-menu .menu-container .item .menu-item h3{}
+/*end of our-menu style End*/
 
 
 @media(max-width: 991px) {
