@@ -515,6 +515,45 @@ section{
 }
 /*reservation section end*/
 
+/*blog section start*/
+
+.blog .box-container .box{
+    background: #fff;
+}
+
+.blog .content{
+    text-align: left;
+    position: relative;
+}
+
+.box .plas{
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+
+}
+
+.blog .content h3,
+.blog .content p,
+.blog  .content a{
+    color: #333!important;
+}
+
+.blog  .content a{
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 1rem;
+    text-decoration: underline;
+}
+/*blog section end*/
+
+/*footer section start*/
+/*footer section end*/
+
+
 
 @media(max-width: 991px) {
     html{
