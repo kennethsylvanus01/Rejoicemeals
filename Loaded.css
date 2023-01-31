@@ -34,7 +34,7 @@ header{
     align-items: center;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
-    z-index: 1;
+    z-index: 6;
 }
 
 header .logo img{
@@ -160,11 +160,11 @@ header .icons #menu-icon{
 }
 
 .slide2{
-    background-image: url(img/pasr.jpg);
+    background-image: url(img/youl.jpg);
 }
 
 .slide3{
-    background-image: url(img/frank.jpg);
+    background-image: url(img/ywb.jpg);
 }
 
 .slider-content{
@@ -316,7 +316,10 @@ section{
 
 /*our-menu style End*/
 .our-menu{
-    background: url(img/logoA.jpg) left top no-repeat, url(img/logoC.jpg);
+    background: url(img/sla.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .our-menu .menu-container{
@@ -367,8 +370,85 @@ section{
 
 .item-menu ul li a{
     color: #b9b9b9;
+    margin: 0 4px;
 }
 /*end of our-menu style End*/
+
+/*our team section start*/
+.our-chef{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    grid-gap: 1.5rem;
+}
+
+.our-chef .item .image img{
+    width: 100%;
+    height: auto;
+}
+
+.our-chef .item{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.our-chef .item:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    display: none;
+    height: 100%;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 5;
+}
+
+.item:before .item:hover{
+    display: block;
+}
+
+.our-chef .item .chef-info{
+    position: absolute;
+    top: 130%;
+    left: -50%;
+    right: 0;top: 0;bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    text-align: center;
+    transition: 1s;
+}
+
+.our-chef .item .chef-info h3{
+    font-size: 1.7rem;
+    color: #fff;
+    padding: .8rem 0;
+    text-transform: uppercase;
+}
+
+.our-chef .item .chef-info span{
+    font-size: 1.7rem;
+    color: var(--light);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.our-chef .item .chef-info ul{
+    list-style: none;
+    display: flex;
+    grid-gap: 2rem;
+    padding: 3rem 0;
+}
+
+.our-chef .item .chef-info ul li a{
+    color: red;
+    font-size: 1.8rem;
+}
+
+.our-chef .item .chef-info ul
+
+/*our team section end*/
 
 
 @media(max-width: 991px) {
