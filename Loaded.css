@@ -316,10 +316,16 @@ section{
 
 /*our-menu style End*/
 .our-menu{
-    background: url(img/sla.jpg);
+    background: url(img/youk.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.our-menu .prazz{
+    color: var(--light);
+    margin-left: 2%;
+    text-shadow: 2px 3px red;
 }
 
 .our-menu .menu-container{
@@ -337,7 +343,7 @@ section{
 }
 
 .item-name img{
-    width: 50px;
+    width: 70px;
     height: auto;
 }
 
@@ -551,8 +557,74 @@ section{
 /*blog section end*/
 
 /*footer section start*/
+.footer{
+    background: #333;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 1.3rem;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,2fr));
+    color: #b2b2b2;
+    grid-gap: 1rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.footer .container div{
+    padding: 0 7rem;
+}
+
+.footer .container h3{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: .8rem;
+}
+
+.footer .container input{
+    width: 100%;
+    border: 1px solid #b2b2b2;
+    padding: .5rem .8rem;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.footer .container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.footer .container ul li a{
+    color: #b2b2b2;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.footer .container span{
+    display: block;
+}
+
+.footer .logo{
+    width: 80px;
+}
 /*footer section end*/
 
+/*custom scroll bar*/
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #cdaa7c;
+}
 
 
 @media(max-width: 991px) {
